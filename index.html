@@ -1,94 +1,122 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <meta charset="UTF-8">
+<html>
 <head>
-<title>
-   主页
-</title>
-<style>
-.line{
-background-color:black;
-height:1px;
-}
-.background{
-background-color:opacity;
-padding:1.5rem;
-}
-.background-grey{
-background-color:grey;
-padding:1.5rem;
-}
-.font-Index{
-font-size:50px;
-}
-.background2{
-background-color:black;
-height:100px;
-width:1px;
-}
-.button-3d-1{
-position: relative;
-background: black;
-border: none;
-color: green;
-padding: 10px 14px;
-font-size: 1rem;
-outline: none;
-}
-.body{
-background-color:grey;
-}
-.font-right{
-font-size:25px;
-text-align:right;
-}
-.font-left{
-font-size:25px;
-}
-.img{
-height:100px;
-width:100px;
-}
-.demo6 {
-	border-radius: 50px;
-            background: linear-gradient(to left, lime 28px, grey 77%, cyan);
-            padding:0.5rem;
-}
-.demo7 {
-	border-radius: 50px;
-            background: linear-gradient(to left, lime 28px, grey 77%, cyan);
-            padding:0.5rem;
-}
-</style>
-</head>
-<body style="background: linear-gradient(to left, green 28px, white 35%);">
-<button class="demo6">Index</button>
-<button class="demo7">Config</button>
-<div class="font-right">Hello Welcome back to my website  </div>
-<div class="background"></div>
-<div class="font-right">欢迎回到我的网站</div>
-<div class="background"></div>
-<div align="center">
-<img src="aimware.png" class="img"></img>
-</div>
-<div class="font-left" align="center">AIMWARE是我曾经使用过的一款cheat，更新力度不大，一坨屎</div>
-<div class="background"></div>
-<div align="center">
-<div style="background-color:black;width:80px;height:auto;">
-<img src="https://www.vape.gg/img/logo.png">
-</img>
-</div>
-</div>
-<div align="center" class="font-left">
-很好，你成功的发现了一款安全挂
-</div>
-<div class="background"></div>
-<div align="center">
-<div style="background-color:black;width:159px;height:auto;">
-<img src="https://legendware.pw/styles/lw/ny/logo_ny.svg">
-</img>
-</div>
-</div>
-<div align="center" class="font-left">
-还有人记得他吗？
-</div>
+    <title>
+        国产客户端-Gro_Client
+    </title>
+    <body>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <style>
+            body {
+                background-color: black;
+                margin: 0;
+                overflow: hidden;
+            }
+
+            /* Create the star elements */
+            .stars {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url("download.png") repeat;
+                background-size: cover;
+            }
+
+            /* Create the twinkling animation */
+            .twinkling {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                animation: twinkling 5s linear infinite;
+            }
+
+            .purple-btn {
+                border: 2px solid purple;
+                color: purple;
+                background-color: transparent;
+                padding: 0.5em 1em;
+                font-size: 1em;
+                transition: all 0.2s;
+                border-radius: 0.3em;
+                text-align: center;
+                width: auto;
+            }
+
+                .purple-btn:hover {
+                    background-color: purple;
+                    color: white;
+                    transform: scale(1.1);
+                }
+
+            @media screen and (max-width: 600px) {
+                .purple-btn {
+                    font-size: 0.8em;
+                }
+            }
+
+            /* Keyframe animation for twinkling stars */
+            @keyframes twinkling {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            .center-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* make sure it covers the full screen */
+            }
+
+            .gro {
+                font-size: 5em;
+                color: white;
+                text-align: center;
+            }
+
+            .client {
+                font-size: 2em;
+                color: purple;
+                text-align: center;
+            }
+
+            .author {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 1em;
+                text-align: center;
+            }
+            
+            .author-section {
+                text-align: center;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 1em;
+                padding: 1em 0;
+            }
+        </style>
+        <div class="center-text">
+            <p class="gro">Gro</p>
+            <p class="client">Client</p>
+            <p class="author">Made by laowang22334</p>
+            <a href="Gro.zip" class="purple-btn" style="text-decoration:none;">Download</a>
+        </div>
+        <div class="author-section">
+            <hr style="color: gray;">
+            <p class="author">Made by laowang22334</p>
+        </div>
+</html>
 </body>
+
